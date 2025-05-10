@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Clase Productos como TDA
 public class Producto {
     // Atributos privados (encapsulamiento)
     private String nombre;
@@ -8,20 +7,18 @@ public class Producto {
     private int cantidad;
 
 
-    // Constructor por defecto (polimorfismo)
     public Producto() {
         this.nombre = "";
         this.precio = 0.0;
         this.cantidad = 0;
     }
-    // Constructor con parámetros (polimorfismo)
+
     public Producto(String nombre, double precio, int cantidad) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
     }
 
-    // Métodos setters y getters (encapsulamiento)
     public String getNombre() {
         return nombre;
     }
@@ -46,7 +43,6 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    // Método para capturar datos desde el usuario
     public void crearProducto() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese el nombre del producto: ");
@@ -57,7 +53,6 @@ public class Producto {
         this.cantidad = sc.nextInt();
     }
 
-    // Método para imprimir los datos del producto
     public void imprimirProducto() {
         System.out.println("=== Información del Producto ===");
         System.out.println("Nombre: " + nombre);
