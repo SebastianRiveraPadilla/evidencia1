@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Producto {
-    // Atributos privados (encapsulamiento)
     private String nombre;
     private double precio;
     private int cantidad;
